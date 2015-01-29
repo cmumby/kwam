@@ -1,0 +1,4 @@
+services:
+#    kwam_kwam.example:
+#        class: Kwam\KwamBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,38 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/vagrant/.nvm/v0.11.14/bin/node',
+1 verbose cli   '/home/vagrant/.nvm/v0.11.14/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'imagemin-*' ]
+2 info using npm@2.0.0
+3 info using node@v0.11.14
+4 warn package.json kwam@0.0.0 No description
+5 warn package.json kwam@0.0.0 No repository field.
+6 warn package.json kwam@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'imagemin-*', null ]
+9 verbose cache add spec="imagemin-*" args=["imagemin-*",null]
+10 verbose parsed spec { raw: 'imagemin-*',
+10 verbose parsed spec   scope: null,
+10 verbose parsed spec   name: null,
+10 verbose parsed spec   rawSpec: 'imagemin-*',
+10 verbose parsed spec   spec: '/vagrant/kwam/imagemin-*',
+10 verbose parsed spec   type: 'local' }
+11 verbose parsed spec { raw: '/vagrant/kwam/imagemin-*',
+11 verbose parsed spec   scope: null,
+11 verbose parsed spec   name: null,
+11 verbose parsed spec   rawSpec: '/vagrant/kwam/imagemin-*',
+11 verbose parsed spec   spec: '/vagrant/kwam/imagemin-*',
+11 verbose parsed spec   type: 'local' }
+12 verbose stack Error: couldn't figure out how to install /vagrant/kwam/imagemin-*
+12 verbose stack     at addNonLocal (/home/vagrant/.nvm/v0.11.14/lib/node_modules/npm/lib/cache.js:309:12)
+12 verbose stack     at /home/vagrant/.nvm/v0.11.14/lib/node_modules/npm/lib/cache.js:278:20
+12 verbose stack     at Object.oncomplete (evalmachine.<anonymous>:93:15)
+13 verbose cwd /vagrant/kwam
+14 error Linux 3.2.0-23-generic-pae
+15 error argv "/home/vagrant/.nvm/v0.11.14/bin/node" "/home/vagrant/.nvm/v0.11.14/bin/npm" "install" "imagemin-*"
+16 error node v0.11.14
+17 error npm  v2.0.0
+18 error couldn't figure out how to install /vagrant/kwam/imagemin-*
+19 error If you need help, you may report this error at:
+19 error     <http://github.com/npm/npm/issues>
+20 verbose exit [ 1, true ]

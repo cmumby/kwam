@@ -1,0 +1,21 @@
+kwam_kwam_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: KwamKwamBundle:Default:index }
+kwam_kwam_generate_users:
+    path:     /api/generate/users
+    defaults: { _controller: KwamKwamBundle:Default:generateUsers }
+kwam_test_kwam:
+    path:	/api/generate/kwam_test_kwam
+    defaults: { _controller: KwamKwamBundle:Default:generateTastKwam }
+kwam_get_kwam:
+    path:	/api/get/kwam/{topic}
+    defaults: { _controller: KwamKwamBundle:Default:getKwam }
+kwam_get_topics:
+    path:	/api/get/recent-topics
+    defaults: { _controller: KwamKwamBundle:Default:getTopTopics }
+kwam_get_recent_posts:
+    path:   /api/get/recent-posts
+    defaults: { _controller: KwamKwamBundle:Default:getRecentPosts }
+kwam_write_post:
+    path:   /api/post/new
+    defaults: { _controller: KwamKwamBundle:Default:createPost }

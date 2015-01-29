@@ -1,0 +1,39 @@
+<span class="lastest-post">Latest Post</span>
+<div class="jumbotron" ng-style="{ 'background' : background  }">
+
+  <h1>{{first.message.topic}}</h1>
+  <p class="lead">
+    <!--img ng-src="{{first.message.picture}}" alt="{{first.message.topic}}" /--><br/>
+    <span class="post-comment">{{first.message.data}}</span>
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/kwam/{{first.message.topicLink}}">View Topic<!-- span class="glyphicon glyphicon-ok"></span--></a></p>
+</div>
+<div class="main-post-info">
+  <section class="picture-container">
+    <img ng-src="{{first.avatar}}"  ng-alt="{{first.user}}" widht="60" height="60"/>
+    <span class="username">{{first.user}}</span>
+  </section>
+  <section class="text-container">
+    <span class="post-message">
+      {{first.message.data}}
+    </span>
+    <a class="btn btn-lg btn-success" ng-href="#/kwam/{{first.message.topicLink}}">View Topic<!-- span class="glyphicon glyphicon-ok"></span--></a>
+  </section>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+  <ul>
+  </ul>
+</div>

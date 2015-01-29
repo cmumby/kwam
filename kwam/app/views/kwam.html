@@ -1,0 +1,48 @@
+<h1 class="btn-success lastest-post">{{kwam.topic}}</h1>
+<div class="jumbotron" ng-style="{ 'background' : background  }">
+  
+</div>
+<div class="main-post-info post-info">
+  <section class="picture-container">
+    <img ng-src="{{kwam.moderator_avatar}}"  ng-alt="{{first.user}}" widht="60" height="60"/>
+    <span class="username">{{kwam.moderator}}</span>
+  </section>
+  <section class="text-container">
+    <span class="post-message">
+      "{{kwam.reson}}"
+    </span>
+    <a class="btn btn-lg btn-success" ng-href="#/kwam/{{first.message.topicLink}}">View This User<!-- span class="glyphicon glyphicon-ok"></span--></a>
+  </section>
+</div>
+
+<div ng-controller="PostCtrl" class="post-info">
+  <h1 class="btn-success">Write A comment</h1>
+  <section class="picture-container">
+    <img ng-src="{{currentUser.avatar}}"  ng-alt="{{post.name}}" widht="60" height="60"/>
+    <span class="username">{{currentUser.name}}</span>
+  </section>
+  <section class="text-container">
+   	<input type="hidden" ng-model="newPost.topic" ng-value="{{kwam.topic}}" />
+    <textarea ng-model="newPost.message"></textarea>
+    <a class="btn btn-lg btn-success" ng-click="writePost(newPost)">Post Comment<!-- span class="glyphicon glyphicon-ok"></span--></a>
+  </section>
+</div>
+
+<div class="post-info" ng-repeat="post in kwam.messages">
+  <h1 class="btn-success">{{post.topic}}</h1>
+  <section class="picture-container">
+    <img ng-src="{{post.avatar}}"  ng-alt="{{post.user}}" widht="60" height="60"/>
+    <span class="username">{{post.user}}</span>
+  </section>
+  <section class="text-container">
+   
+    <span ng-if="post.type == 'text'" class="post-message central">
+      {{post.message}}
+    </span>
+    <img ng-if="post.type == 'picture'" ng-src="{{post.message}}" />
+    <a class="btn btn-lg btn-success" ng-href="#/kwam/{{post.message.topicLink}}">View This User<!-- span class="glyphicon glyphicon-ok"></span--></a>
+  </section>
+</div>
+
+
+

@@ -1,0 +1,36 @@
+<h1 class="btn-success lastest-post">Latest Post</h1>
+<div class="jumbotron" ng-style="{ 'background' : background  }">
+
+  <h1>{{first.message.topic}}</h1>
+  
+</div>
+<div class="main-post-info post-info">
+  <section class="picture-container">
+    <img ng-src="{{first.avatar}}"  ng-alt="{{first.user}}" widht="60" height="60"/>
+    <span class="username">{{first.user}}</span>
+  </section>
+  <section class="text-container">
+    <span class="post-message">
+      "{{first.message.data}}"
+    </span>
+    <a class="btn btn-lg btn-success" ng-href="#/kwam/{{first.message.topicLink}}">View Topic<!-- span class="glyphicon glyphicon-ok"></span--></a>
+  </section>
+</div>
+
+
+<div class="post-info" ng-repeat="post in posts">
+  <h1 class="btn-success">{{post.message.topic}}</h1>
+  <section class="picture-container">
+    <img ng-src="{{post.avatar}}"  ng-alt="{{post.user}}" widht="60" height="60"/>
+    <span class="username">{{post.user}}</span>
+  </section>
+  <section class="text-container">
+    <img ng-src="{{post.message.picture}}"/>
+    <span class="post-message central">
+      {{post.message.data}}
+    </span>
+    <a class="btn btn-lg btn-success" ng-href="#/kwam/{{post.message.topicLink}}">View<!-- span class="glyphicon glyphicon-ok"></span--></a>
+  </section>
+</div>
+
+

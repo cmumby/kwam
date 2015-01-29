@@ -1,0 +1,4 @@
+kwam_kwam:
+    resource: "@KwamKwamBundle/Resources/config/routing.yml"
+    prefix:   /
+

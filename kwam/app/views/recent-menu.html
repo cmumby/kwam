@@ -1,0 +1,11 @@
+
+
+<ul class="nav nav-pills pull-right">
+  <li class="active"><a ng-href="#">Home</a></li>
+  <!-- li><a ng-href="#/about">About</a></li>
+  <li><a ng-href="#/contact">Contact</a></li>
+  <li><a ng-href="#/ebola">Ebola<sup>test</sup></a></li-->
+  <li ng-repeat="x in topics">
+      <a ng-href="#/kwam/{{x.url}}">{{x.title}}</a>
+  </li>
+</ul>
